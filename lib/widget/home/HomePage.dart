@@ -18,7 +18,8 @@ class _HomePageState extends State<HomePage> {
     var result = await _blogService.getAllBlog();
     List<BlogData>? _list = <BlogData>[];
     if (result != null) {
-      var blogPosts = json.decode(result.body);
+      var blogPosts;
+      blogPosts = json.decode(result.body);
       blogPosts.forEach((blogPost) {
         var model = BlogData();
         model.title = blogPost['title'];
@@ -70,7 +71,8 @@ class _HomePageState extends State<HomePage> {
                             6.0,
                           ),
                           child: Text(
-                              '${snapshot.data![index].title!.toString()}'),
+                            snapshot.data![index].title.toString(),
+                          ),
                         ),
                       ],
                     ),
@@ -81,7 +83,7 @@ class _HomePageState extends State<HomePage> {
           } else {
             return Center(
               child: Container(
-                child: CircularProgressIndicator(),
+                child: Text('Loading ..'),
               ),
             );
           }
