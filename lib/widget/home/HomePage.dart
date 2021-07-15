@@ -83,7 +83,10 @@ class _HomePageState extends State<HomePage> {
           } else {
             return Center(
               child: Container(
-                child: Text('Loading ..'),
+                child: Text(
+                  'Loading ..',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
               ),
             );
           }
