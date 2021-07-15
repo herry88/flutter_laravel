@@ -17,4 +17,15 @@ class BlogData {
     this.category,
     this.createdAt,
   });
+
+  factory BlogData.fromJson(Map<String, dynamic> json) {
+    return BlogData(
+      id: json['id'],
+      title: json['title'],
+      featured_image_url: json['featured_image_url'],
+      details: json['details'],
+      category: json['category'],
+      createdAt: json['createdAt'],
+    );
+  }
 }

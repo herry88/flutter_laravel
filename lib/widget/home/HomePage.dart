@@ -36,6 +36,12 @@ class _HomePageState extends State<HomePage> {
   }
 
   @override
+  void initState() {
+    _getAllBlog();
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -63,7 +69,8 @@ class _HomePageState extends State<HomePage> {
                           padding: const EdgeInsets.all(
                             6.0,
                           ),
-                          child: Text(snapshot.data![index].title.toString()),
+                          child: Text(
+                              '${snapshot.data![index].title!.toString()}'),
                         ),
                       ],
                     ),
