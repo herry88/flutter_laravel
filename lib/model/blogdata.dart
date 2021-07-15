@@ -5,7 +5,7 @@ class BlogData {
   String? details;
   // ignore: non_constant_identifier_names
   String? featured_image_url;
-  String? category;
+  int? category;
   String? createdAt;
 
   BlogData({
