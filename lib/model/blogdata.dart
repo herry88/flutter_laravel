@@ -1,4 +1,5 @@
 class BlogData {
+  //addblog
   int? id;
   String? title;
   String? details;
