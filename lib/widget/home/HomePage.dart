@@ -85,7 +85,9 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                 child: Text(
                   'Loading ..',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             );
