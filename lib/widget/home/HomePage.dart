@@ -20,6 +20,7 @@ class _HomePageState extends State<HomePage> {
     if (result != null) {
       var blogPosts;
       blogPosts = json.decode(result.body);
+      print(blogPosts);
       blogPosts.forEach((blogPost) {
         var model = BlogData();
         model.title = blogPost['title'];
