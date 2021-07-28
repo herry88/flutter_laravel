@@ -67,6 +67,7 @@ class _HomePageState extends State<HomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
+
                         //beri padding
                         Padding(
                           padding: const EdgeInsets.all(
@@ -80,6 +81,7 @@ class _HomePageState extends State<HomePage> {
                           padding: const EdgeInsets.all(6.0),
                           child: Text('${snapshot.data![index].title}'),
                         ),
+
                       ],
                     ),
                   ),
