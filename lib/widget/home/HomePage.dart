@@ -20,6 +20,7 @@ class _HomePageState extends State<HomePage> {
     if (result != null) {
       var blogPosts;
       blogPosts = json.decode(result.body);
+      print(blogPosts);
       blogPosts.forEach((blogPost) {
         var model = BlogData();
         model.title = blogPost['title'];
@@ -66,14 +67,7 @@ class _HomePageState extends State<HomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.all(
-                            6.0,
-                          ),
-                          child: Text(
-                            snapshot.data![index].title.toString(),
-                          ),
-                        ),
+                       
                       ],
                     ),
                   ),
