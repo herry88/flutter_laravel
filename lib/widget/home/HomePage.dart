@@ -67,14 +67,7 @@ class _HomePageState extends State<HomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.all(
-                            6.0,
-                          ),
-                          child: Text(
-                            snapshot.data![index].title.toString(),
-                          ),
-                        ),
+                       
                       ],
                     ),
                   ),
